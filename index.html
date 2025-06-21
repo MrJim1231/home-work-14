@@ -11,10 +11,11 @@
 
 <body>
 
+  <!-- header -->
   <div class="bg-info-subtle ">
     <div class="container mb-4">
       <h1 class="text-center text-white py-5">Header</h1>
-
+      <!-- nav section -->
       <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Постельное белье</a>
@@ -67,23 +68,62 @@
         </div>
       </nav>
     </div>
-    </nav>
   </div>
-  </div>
+
 
   <div class="container">
     <div class="row">
+      <!-- main section -->
       <div class="bg-light-subtle col-xxl-7 col-xl-8 col-lg-12 mb-4">
         <span>Main</span>
       </div>
-      <div class="bg-danger col-xxl-3 col-xl-4 col-lg-6 order-xl-first mb-4">
-        <span>Left</span>
+      <!-- left section -->
+      <div class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first mb-4">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/black-bedding.webp" class="d-block w-100" alt="Black Bedding">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/blue-bedding.webp" class="d-block w-100" alt="Blue Bedding">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/brown-bedding.webp" class="d-block w-100" alt="Brown Bedding">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/light-bedding.webp" class="d-block w-100" alt="Light Bedding">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
+
+      <!-- right section -->
       <div class="bg-info col-xxl-2 col-xl-12 col-lg-6 mb-4">
         <span>Right</span>
       </div>
     </div>
 
+    <!-- footer -->
     <div class="row">
       <div class="bg-dark-subtle col">
         <span>Footer</span>
