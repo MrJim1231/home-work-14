@@ -1,3 +1,8 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'bootswatch';
+
+// Эффект тени текста
 .text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
