@@ -11,11 +11,11 @@
 
 <body>
 
-  <!-- header -->
+  <!-- Header -->
   <div class="bg-info-subtle ">
     <div class="container mb-4">
       <h1 class="text-center text-white py-5">Header</h1>
-      <!-- nav section -->
+      <!-- Navigation -->
       <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Постельное белье</a>
@@ -70,12 +70,60 @@
     </div>
   </div>
 
-
   <div class="container">
     <div class="row">
-      <!-- main section -->
+      <!-- Main section -->
       <div class="bg-light-subtle col-xxl-7 col-xl-8 col-lg-12 mb-4">
-        <span>Main</span>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Как выбрать постельное белье?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Выбор постельного белья — важный шаг для комфортного сна.</strong> Обратите внимание на
+                материал,
+                размер и дизайн. Натуральные ткани, такие как хлопок или лен, обеспечивают комфорт и долговечность.
+                Убедитесь, что размеры подходят для вашего матраса и подушек. Дизайн должен гармонировать с интерьером
+                вашей спальни.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Уход за постельным бельем
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Правильный уход продлевает срок службы постельного белья.</strong> Стирайте белье при
+                рекомендованной температуре, указанной на ярлыке. Используйте мягкие моющие средства, чтобы сохранить
+                цвет и текстуру ткани. Гладьте белье, если это необходимо, чтобы оно выглядело аккуратно.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Популярные материалы для постельного белья
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Существует множество материалов для постельного белья.</strong> Хлопок — самый популярный выбор
+                благодаря своей мягкости и воздухопроницаемости. Сатин придает белью гладкость и блеск. Лен идеально
+                подходит для жаркой погоды, так как он хорошо впитывает влагу. Выберите материал, который соответствует
+                вашим предпочтениям и климату.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- left section -->
       <div class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first mb-4">
@@ -116,21 +164,75 @@
           </button>
         </div>
       </div>
-
-      <!-- right section -->
-      <div class="bg-info col-xxl-2 col-xl-12 col-lg-6 mb-4">
-        <span>Right</span>
+      <!-- Right section -->
+      <div class="bg-info col-xxl-2 col-xl-12 col-lg-6 mb-4 p-3">
+        <h3 class="text-center text-white">Форма заказа</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label text-white">Имя</label>
+            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-white">Электронная почта</label>
+            <input type="email" class="form-control" id="email" placeholder="Введите вашу почту">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label text-white">Телефон</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Введите ваш телефон">
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label text-white">Адрес доставки</label>
+            <input type="text" class="form-control" id="address" placeholder="Введите ваш адрес">
+          </div>
+          <div class="mb-3">
+            <label for="product" class="form-label text-white">Выберите товар</label>
+            <select class="form-select" id="product">
+              <option selected>Выберите...</option>
+              <option value="Комплекты">Комплекты</option>
+              <option value="Подушки">Подушки</option>
+              <option value="Одеяла">Одеяла</option>
+              <option value="Простыни">Простыни</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-light w-100">Отправить</button>
+        </form>
       </div>
     </div>
-
-    <!-- footer -->
-    <div class="row">
-      <div class="bg-dark-subtle col">
-        <span>Footer</span>
-      </div>
-    </div>
-
   </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>О компании</h5>
+          <p>Мы предлагаем качественное постельное белье для вашего комфорта и уюта. Наши товары созданы с заботой о
+            вашем сне.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Контакты</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-telephone"></i> +380 (123) 456-78-90</li>
+            <li><i class="bi bi-envelope"></i> info@example.com</li>
+            <li><i class="bi bi-geo-alt"></i> Украина, Днепр</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Подписка на новости</h5>
+          <form>
+            <div class="mb-3">
+              <label for="newsletterEmail" class="form-label">Введите ваш email</label>
+              <input type="email" class="form-control" id="newsletterEmail" placeholder="example@mail.com">
+            </div>
+            <button type="submit" class="btn btn-light w-100">Подписаться</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p class="mb-0">&copy; 2025 Постельное белье. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Подключение Bootstrap JS -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
