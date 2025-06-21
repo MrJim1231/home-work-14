@@ -21,3 +21,7 @@ ctrl+alt+i - открыть чат Copilot
 Если добавить импорт в scss то по 5 секунд собирает проект ,лучше добавить
 
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+   <!-- Подключение Bootstrap JS -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
