@@ -1,0 +1,11 @@
+// Подключаем Bootstrap
+// @import '../../node_modules/bootstrap/scss/bootstrap';
+
+div > span {
+  color: white;
+  background-color: red;
+  padding: 5px;
+  margin: 5px;
+  display: block;
+  text-align: center;
+}
